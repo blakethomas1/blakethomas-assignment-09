@@ -8,3 +8,9 @@ import 'bootstrap'
 // JavaScript
 
 //TODO
+
+import { addBook } from './bookform'
+
+if(document.querySelector('#landing')){
+    document.getElementById("bookForm").onsubmit = addBook
+}
