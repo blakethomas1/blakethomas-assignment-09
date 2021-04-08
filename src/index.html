@@ -18,13 +18,16 @@
 
       <div class="container pt-5">
         <div class="row">
-          <div class="col-lg">
+          <div class="col-9">
             <h2 id="bookclub">Suggest a new book</h2>
             <table class="table">
               <thead>
                 <tr>
                   <th>Title:</th>
+                  <th>Poster:</th>
                   <th>Author:</th>
+                  <th>Description:</th>
+                  <th>Publication Year:</th>
                 </tr>
               </thead>
               <tbody></tbody>
@@ -32,9 +35,9 @@
           </div>
 
 
-          <div class="col-lg">
+          <div class="col-3">
 
-            <div class="container bg-dark pt-4 text center" style="height: 390px; width: 650px;">
+            
               <div class="container bg-light p-5">
                 <h2 class="pb-4">Please Enter The Book:</h2>
                 <form id="bookForm">
@@ -43,13 +46,25 @@
                     <input type="text" id="title" name="title" class="form-control">
                   </div>
                   <div class="form-group">
+                    <label for="url">Enter Poster URL:</label>
+                    <input type="text" id="url" name="url" class="form-control">
+                  </div>
+                  <div class="form-group">
                     <label for="author_name">Enter the Author's Name:</label>
                     <input type="text" id="author_name" name="author_name" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="description">Please Enter A Description:</label>
+                    <input type="text" id="description" name="description" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="year">Enter The Publication Year:</label>
+                    <input type="text" id="year" name="year" class="form-control">
                   </div>
                   <button type="submit" class="btn btn-primary m-1">Submit</button>
                 </form>
               </div>
-            </div>
+            
             </div>
 
           
@@ -57,8 +72,8 @@
       </div>
 
 
-  <footer class="bg-dark text-light text-center">
-    <h2>All Rights Reserved</h2>
+  <footer class="bg-dark text-light text-center" >
+    <h6>All Rights Reserved</h6>
   </footer>
   <script src="/javascripts/main.js"></script>
 </body>

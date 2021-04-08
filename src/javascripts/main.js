@@ -9,8 +9,9 @@ import 'bootstrap'
 
 //TODO
 
-import { addBook } from './bookform'
+import { addBook, loadBooks } from './bookform'
 
 if(document.querySelector('#landing')){
     document.getElementById("bookForm").onsubmit = addBook
+    window.onload = loadBooks
 }
